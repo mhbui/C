@@ -24,7 +24,7 @@ void DrawXO (int**table){
 
 void WinCheck(int table[]){
 
-    if (*table!=0){
+    for i=0,table]!=0){
         if ((table[0]==table[1] && table[1]==table[2] && table[2]==1) || (table[3]==table[4] && table[4]==table[5] && table[5]==1) ||
             (table[6]==table[7] && table[7]==table[8] && table[8]==1) || (table[0]==table[3] && table[3]==table[6] && table[6]==1) ||
             (table[1]==table[4] && table[4]==table[7] && table[7]==1) || (table[2]==table[5] && table[5]==table[8] && table[8]==1) ||
@@ -42,6 +42,7 @@ void WinCheck(int table[]){
     }   
 }
 
+
 int main () {
     int PrevState;
     int State;
@@ -57,5 +58,5 @@ int main () {
         printf("It's X's turn");
     }
 
-    DrawXO(NULL);
+    DrawXO(State);
 }
